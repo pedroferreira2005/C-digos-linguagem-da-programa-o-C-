@@ -1,0 +1,187 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int *ponteiro;
+ int valor = 10;
+ ponteiro = &valor;
+
+ cout << "Valor da variavel: " << valor << endl;
+ cout << "Valor do ponteiro: " << *ponteiro << endl;
+ cout << "Endereço na memória do ponteiro: " << ponteiro << endl;
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void incrementar(int *ponteiro) {
+ *ponteiro = 10;
+}
+int main() {
+ int variavel = 15;
+ cout << "Valor antes da funcao: " << variavel << endl;
+ incrementar(&variavel);
+ cout << "Valor depois da funcao: " << variavel << endl;
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int numero = 10;
+ int* ptr;
+ ptr = &numero;
+
+ cout << "O valor da variavel: " << numero << endl;
+ cout << "O endereco da variavel: " << &numero << endl;
+ cout << "O valor apontado pelo ponteiro: " << *ptr << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ float valor = 5.5f;
+ float* ptr;
+ ptr = &valor;
+ cout << "Valor acessado pelo ponteiro: " << *ptr << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int minhaVariavel = 20;
+ int* ptr = &minhaVariavel;
+ *ptr = 50;
+
+ cout << "O novo valor da variavel e: " << minhaVariavel << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void dobrar(int* ptr) {
+ *ptr = (*ptr) * 2;
+}
+int main() {
+ int valor = 5;
+
+ cout << "valor = " << valor << endl;
+
+ dobrar(&valor);
+
+ cout << "Apos chamar a funcao:" << endl;
+ cout << "valor = " << valor << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void trocarValor(int* ptr) {
+ *ptr = 100;
+}
+int main() {
+ int valor = 25;
+
+ cout << "Valor inicial: " << valor << endl;
+
+ trocarValor(&valor);
+
+ cout << "Valor apos a funcao: " << valor << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int var1 = 42;
+ int var2 = 84;
+
+ int* ptr1 = &var1;
+ int* ptr2 = &var2;
+
+ cout << "O valor apontado pelo primeiro ponteiro e: " << *ptr1 << endl;
+ cout << "O valor apontado pelo segundo ponteiro e: " << *ptr2 << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int valor = 7;
+ int* ptr = &valor;
+
+ (*ptr)++;
+
+ cout << "Resultado:" << endl;
+ cout << "valor = " << valor << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void somarUm(int* ptr) {
+ *ptr = *ptr + 1;
+}
+int main() {
+ int numero = 10;
+
+ somarUm(&numero);
+ cout << "Valor apos somarUm: " << numero << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ char letra = 'A';
+ char* ptr = &letra;
+
+ cout << "A letra armazenada e: " << *ptr << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int numero = 42;
+ int* ptr = &numero;
+
+ cout << "O endereco da variavel: " << &numero << endl;
+ cout << "O endereco armazenado no ponteiro: " << ptr << endl;
+ cout << "O valor da variavel: " << numero << endl;
+ cout << "O valor acessado pelo ponteiro: " << *ptr << endl;
+
+ return 0;
+}
