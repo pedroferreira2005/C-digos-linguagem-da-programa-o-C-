@@ -1,0 +1,200 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int num1, num2, soma;
+ cout << "Digite o primeiro numero inteiro: ";
+ cin >> num1;
+ cout << "Digite o segundo numero inteiro: ";
+ cin >> num2;
+ soma = num1 + num2;
+
+ cout << "A soma de " << num1 << " e " << num2 << " e igual a: " << soma << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int num1, num2, diferenca;
+ cout << "Digite o primeiro numero inteiro: ";
+ cin >> num1;
+ cout << "Digite o segundo numero inteiro: ";
+ cin >> num2;
+ diferenca = num1 - num2;
+ cout << "A diferenca entre " << num1 << " e " << num2 << " e igual a: " <<
+diferenca << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ double num1, num2, produto;
+ cout << "Digite o primeiro numero: ";
+ cin >> num1;
+ cout << "Digite o segundo numero: ";
+ cin >> num2;
+ produto = num1 * num2;
+ cout << "O produto de " << num1 << " e " << num2 << " e igual a: " << produto <<
+endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ double num1, num2, resultado;
+ cout << "Digite o primeiro numero: ";
+ cin >> num1;
+ cout << "Digite o segundo numero: ";
+ cin >> num2;
+
+ if (num2 == 0) {
+ cout << "Erro: Nao e possivel realizar divisao por zero!" << endl;
+ } else {
+ resultado = num1 / num2;
+
+ cout << "O resultado da divisao de " << num1 << " por " << num2 << " e igual a:
+" << resultado << endl;
+ }
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ double num1, num2, num3, media;
+
+ cout << "Digite o primeiro numero: ";
+ cin >> num1;
+
+ cout << "Digite o segundo numero: ";
+ cin >> num2;
+ cout << "Digite o terceiro numero: ";
+ cin >> num3;
+ media = (num1 + num2 + num3) / 3.0;
+ cout << "A media aritmetica e igual a: " << media << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ double numero, dobro, triplo;
+ cout << "Digite um numero: ";
+ cin >> numero;
+ dobro = numero * 2;
+ triplo = numero * 3;
+ cout << "O dobro de " << numero << " e igual a: " << dobro << endl;
+ cout << "O triplo de " << numero << " e igual a: " << triplo << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ double metros, centimetros, milimetros;
+ cout << "Digite um valor em metros: ";
+ cin >> metros;
+ centimetros = metros * 100;
+ milimetros = metros * 1000;
+ cout << "\n--- Resultados da Conversao ---" << endl;
+ cout << metros << " metro(s) equivale(m) a:" << endl;
+ cout << centimetros << " centimetros" << endl;
+ cout << milimetros << " milimetros" << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ double largura, altura, area;
+ cout << "Digite a largura do retangulo: ";
+ cin >> largura;
+ cout << "Digite a altura do retangulo: ";
+ cin >> altura;
+ area = largura * altura;
+
+ cout << "A area do retangulo de " << largura << " por " << altura << " e igual a: "
+<< area << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ double lado, perimetro;
+ cout << "Digite o valor do lado do quadrado: ";
+ cin >> lado;
+ perimetro = lado * 4;
+ cout << "O perimetro do quadrado de lado " << lado << " e igual a: " << perimetro
+<< endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int n;
+ double custoTotal;
+ cout << "Digite a quantidade de laranjas que deseja comprar: ";
+ cin >> n;
+ custoTotal = (n * 10.0) / 5.0;
+ cout << "\nO custo de " << n << " laranja(s) e igual a: R$ " << custoTotal << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ int numeroInteiro = 42;
+ char letra = 'C';
+ double numeroDecimal = 3.14159;
+ cout << "--- Valores das Variaveis Locais ---" << endl;
+ cout << "Inteiro (int): " << numeroInteiro << endl;
+ cout << "Caractere (char): " << letra << endl;
+ cout << "Decimal (double): " << numeroDecimal << endl;
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void func2() {
+ int y = 20;
+ cout << "func2: y = " << y << endl;
+}
+void func1() {
+ int x = 10;
+ func2();
+ cout << "func1: x = " << x << endl;
+}
+int main() {
+ int a = 5;
+ func1();
+ cout << "main: a = " << a << endl;
+}
