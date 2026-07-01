@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+  int main() {
+    int* p = new int;
+    *p = 30;
+
+    cout << "O valor é " << *p << endl;
+    delete p;
+
+  return 0;
+}
