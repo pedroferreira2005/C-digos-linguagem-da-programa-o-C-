@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+ int *p = new int;
+ *p = 100;
+ cout << "O valor armazenado dinamicamente e: " << *p << endl;
+ delete p;
+
+ return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+ double a = 52.2;
+ int b = 42;
+ char c = 'V';
+ string d = "aula";
+
+ cout << "Tamanho de um double: " << sizeof(a) << endl;
+ cout << "Tamanho de um int: " << sizeof(b) << endl;
+ cout << "Tamanho de um char: " << sizeof(c) << endl;
+ cout << "Tamanho de uma string: " << sizeof(d) << endl;
+ return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ int *p = new int;
+ *p = 42;
+
+ cout << *p << endl;
+ delete p;
+
+ return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ int *p = new int;
+ *p = 10;
+
+ cout << "Valor armazenado e " << *p << endl;
+
+ delete p;
+ return 0;
+}
