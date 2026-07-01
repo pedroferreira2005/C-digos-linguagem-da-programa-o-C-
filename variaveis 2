@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int idade;
+ float altura;
+ cout << "Digite sua idade: ";
+ cin >> idade;
+ cout << "Digite sua altura (em metros): ";
+ cin >> altura;
+ cout << "\n=== DADOS DO USUARIO ===\n";
+ cout << "Idade: " << idade << " anos" << endl;
+ cout << "Altura: " << altura << " m" << endl;
+ return 0;
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+ // 10 variáveis string
+ string nome1 = "A", nome2 = "B", nome3 = "C", nome4 = "D", nome5 = "E";
+ string nome6 = "F", nome7 = "G", nome8 = "H", nome9 = "I", nome10 = "J";
+ // 10 variáveis char
+ char letra1 = 'a', letra2 = 'b', letra3 = 'c', letra4 = 'd', letra5 = 'e';
+ char letra6 = 'f', letra7 = 'g', letra8 = 'h', letra9 = 'i', letra10 = 'j';
+ // 10 variáveis int
+ int num1 = 1, num2 = 2, num3 = 3, num4 = 4, num5 = 5;
+ int num6 = 6, num7 = 7, num8 = 8, num9 = 9, num10 = 10;
+ // 10 variáveis double
+ double d1 = 1.1, d2 = 2.2, d3 = 3.3, d4 = 4.4, d5 = 5.5;
+ double d6 = 6.6, d7 = 7.7, d8 = 8.8, d9 = 9.9, d10 = 10.1;
+ // 10 variáveis bool
+ bool b1 = true, b2 = false, b3 = true, b4 = false, b5 = true;
+ bool b6 = false, b7 = true, b8 = false, b9 = true, b10 = false;
+ return 0;
+}
