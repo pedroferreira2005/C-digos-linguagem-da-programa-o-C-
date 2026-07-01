@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+void triplicar(int &n) {
+ n = n * 3;
+}
+int main() {
+ int valor;
+
+ cout << "Digite um número para triplicar: " <<endl;
+ cin >> valor;
+
+ triplicar(valor);
+ cout << "Resultado triplicado é: " << valor << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void triplicar(int *n) {
+ *n = *n * 3;
+}
+int main() {
+ int valor;
+
+ cout << "Digite um número para triplicar: " <<endl;
+ cin >> valor;
+
+ triplicar(&valor);
+ cout << "Resultado triplicado é: " << valor << endl;
+
+ return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void dobrar(int &n) {
+n = n * 2;
+}
+int main() {
+int a = 3;
+int *p = &a;
+*p = *p + 4;
+cout << a;
+return 0;
+}
