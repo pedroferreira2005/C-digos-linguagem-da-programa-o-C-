@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+ float a = 98.98;
+ int b = a + 50; //
+ cout << "Resultado: " << b << endl;
+return 0;
+}
+
+------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ int a = 10;
+ char b = 'B';
+ int resultado = a + b;
+ cout << "Resultado da soma é " << resultado << endl;
+ return 0;
+}
+
+------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ int a = 7;
+ int b = 118;
+ cout << "Resultado da divisão de 114/7 é " << b / a << endl;
+ return 0;
+}
