@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main() {
+   string nomeProduto;
+   int quantidade;
+   float preco;
+  
+   cout << "Digite o nome do produto: ";
+   getline(cin, nomeProduto);
+  
+   cout << "Digite a quantidade em estoque: ";
+   cin >> quantidade;
+  
+   cout << "Digite o preco unitario: ";
+   cin >> preco;
+  
+   cout << "\n=== INFORMACOES DO PRODUTO ===\n";
+   cout << "Nome: " << nomeProduto << endl;
+   cout << "Quantidade em estoque: " << quantidade << endl;
+   cout << "Preco unitario: R$ " << fixed << setprecision(2) << preco << endl;
+  
+ return 0;
+}
