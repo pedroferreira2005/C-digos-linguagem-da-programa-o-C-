@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+int main() {
+ string nomeProduto = "Teclado Mecânico";
+ int quantidadeEstoque = 45;
+ double precoUnitario = 250.99;
+ cout << "--- Informações do Produto ---" << endl;
+ cout << "Produto: " << nomeProduto << endl;
+ cout << "Quantidade em estoque: " << quantidadeEstoque << " unidades" <<
+endl;
+ cout << fixed << setprecision(2); 
+ cout << "Preço unitário: R$ " << precoUnitario << endl;
+ return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int idade;
+ float altura;
+ cout << "Digite sua idade: ";
+ cin >> idade;
+ cout << "Digite sua altura em metros (ex: 1.75): ";
+ cin >> altura;
+ cout << "Idade: " << idade << " anos" << endl;
+ cout << "Altura: " << altura << "m" << endl;
+ return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void func2() {
+int y = 20;
+cout << "func2: y = " << y << endl;
+}
+void func1() {
+int x = 10;
+func2();
+cout << "func1: x = " << x << endl;
+}
+int main() {
+int a = 5;
+func1();
+cout << "main: a = " << a << endl;
+}
