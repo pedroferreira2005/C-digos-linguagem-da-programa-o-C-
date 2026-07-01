@@ -1,0 +1,156 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+ string alimentos[15] = {
+ "Maçã", "Banana", "Cenoura", "Batata", "Laranja",
+ "Uva", "Tomate", "Alface", "Cebola", "Abacaxi",
+ "Manga", "Brócolis", "Pera", "Melancia", "Repolho"
+ };
+
+ cout << "Alimento na posicao 12: " << alimentos[11] << endl;
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+
+ double precos[15] = {
+ 2.50, 3.00, 1.50, 4.20, 5.00,
+ 6.50, 3.20, 2.00, 1.80, 7.00,
+ 4.50, 5.50, 6.00, 8.00, 2.20
+ };
+
+ cout << "Preco na posicao 14: R$ " << precos[13] << endl;
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+ string marcas[7] = {"Fiat", "Chevrolet", "Volkswagen", "Ford", "Toyota", "Honda",
+"Hyundai"};
+
+ cout << "Marcas de carro:" << endl;
+ for(int i = 0; i < 7; i++) {
+ cout << "- " << marcas[i] << endl;
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+ string modelos[7] = {"Mobi", "Onix", "Polo", "Ka", "Corolla", "Civic", "HB20"};
+
+ cout << "Modelos de carro:" << endl;
+ for(int i = 0; i < 7; i++) {
+ cout << "- " << modelos[i] << endl;
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int precosCarros[7] = {60000, 80000, 85000, 50000, 150000, 160000, 75000};
+
+ cout << "Precos dos carros:" << endl;
+ for(int i = 0; i < 7; i++) {
+ cout << "R$ " << precosCarros[i] << endl;
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+ string alunos[10] = {
+ "Ana", "Bruno", "Carlos", "Daniela", "Eduardo",
+ "Fernanda", "Gabriel", "Helena", "Igor", "Julia"
+ };
+
+ double notas[10] = {8.5, 7.0, 9.2, 6.5, 10.0, 8.0, 7.5, 9.0, 6.0, 8.8};
+
+ cout << "Aluno 5: " << alunos[4] << endl;
+ cout << "Nota: " << notas[4] << endl;
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ // Declarando e inicializando os 3 vetores com valores direto no código
+ int v1[3] = {1, 2, 3};
+ int v2[3] = {4, 5, 6};
+ int v3[3] = {7, 8, 9};
+
+ int soma[3];
+ cout << "Vetor resultante da soma das posicoes:\n";
+
+ // Somando os elementos das mesmas posições e exibindo
+ for(int i = 0; i < 3; i++) {
+ soma[i] = v1[i] + v2[i] + v3[i];
+ cout << "Posicao " << i << ": " << soma[i] << "\n";
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int A[3], B[3], D[3];
+ for(int i = 0; i < 3; i++) {
+ cin >> A[i];
+ }
+ for(int i = 0; i < 3; i++) {
+ cin >> B[i];
+ }
+ for(int i = 0; i < 3; i++) {
+ D[i] = A[i] - B[i];
+ cout << D[i] << " ";
+ }
+
+ cout << endl;
+ return 0;
+}
+
+----------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int A[3], B[3];
+ int produtoEscalar = 0;
+ for(int i = 0; i < 3; i++) {
+ cin >> A[i];
+ }
+ for(int i = 0; i < 3; i++) {
+ cin >> B[i];
+ }
+ for(int i = 0; i < 3; i++) {
+ produtoEscalar += (A[i] * B[i]);
+ }
+ cout << produtoEscalar << endl;
+ return 0;
+}
