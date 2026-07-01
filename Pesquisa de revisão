@@ -1,0 +1,111 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int Num1;
+ int Num2;
+cout << "Lendo o primeiro número...: ";
+ cin >> Num1;
+ cout << endl;
+ cout << "Lendo o segundo número....: ";
+cin >> Num2;
+ cout << endl;
+return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout << "Imprimindo o famoso HELLO WORLD!!!\n";
+ cout << "Teste com ";
+ cout << "dois couts\n";
+cout << "Escrevendo uma linha..." << endl;
+cout << "Mais uma vez...\n";
+cout << flush; 
+return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int nota = 85;
+if (nota >= 90) {
+ cout << "Conceito A" << endl;
+ }
+ else if (nota >= 80) {
+ cout << "Conceito B" << endl;
+ }
+ else if (nota >= 70) {
+ cout << "Conceito C" << endl;
+ }
+ else {
+ cout << "Conceito F" << endl;
+ }
+ return 0;
+} 
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+  int main() {
+   int dia = 3;
+   switch (dia) {
+   case 1:
+   cout << "Domingo" << endl;
+   break;
+   case 2:
+   cout << "Segunda" << endl;
+   break;
+   case 3:
+   cout << "Terca" << endl;
+   break;
+   default:
+   cout << "Dia invalido" << endl;
+   break;
+   }
+   return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ for (int i = 1; i <= 5; ++i) {
+ cout << i << " ";
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int numero = 1;
+ while (numero != 0) {
+ cout << "Digite um numero (0 para sair): ";
+ cin >> numero;
+ }
+ return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+ int num;
+ do {
+ cout << "Digite um numero positivo: ";
+ cin >> num;
+ } while (num <= 0); // Repete se for negativo ou zero
+ cout << "Voce digitou: " << num << endl;
+ return 0;
+}
